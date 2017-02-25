@@ -1,0 +1,55 @@
+body {
+	background: navy;
+}
+
+h1 {
+	background: orange;
+	text-align: center;
+	width: 800px;
+	height: 60px;
+	margin: 10px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#para {
+	background: tan;
+	width: 800px;
+	margin: 10px;
+	padding: 20px;
+}
+
+#randoNumb {
+	background: olive;
+	width: 400px;
+	float: left;
+	height: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 40px;
+}
+
+#winLoss {
+	background: lightgreen;
+	text-align: center;
+	width: 300px;
+	float: left;
+	clear: right;
+	height: 100px;
+	margin: auto; 
+}
+
+.gems {
+	width: 100px;
+	height: 100px;
+	background: white;
+	float: left;
+	margin:10px;
+	clear: right;
+}
+
+.scoreTally {
+	background: teal;
+	width: 300px;
+	font-size: 20px;
+}
