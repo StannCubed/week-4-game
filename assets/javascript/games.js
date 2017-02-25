@@ -15,42 +15,46 @@ $( document ).ready(function() {
     $("#randoNumb").html(randomNum);
     $("#win").append(winNum);
     $("#loss").append(lossNum);
-    $("#scoreTallyNum").append(scoreNum);
+    $("#scoreTallyNum").html(scoreNum);
 
 
     $(".amethyst").click(function() {
     	scoreNum = scoreNum + amethystAdd;
-    	$("#scoreTallyNum").replaceWith("<p>scoreNum<p>");
     	console.log(scoreNum);
+    	$(".scoreTallyNum").html(scoreNum);
     })
 
     $(".ruby").click(function() {
     	scoreNum = scoreNum + rubyAdd;
-    	$("#scoreTallyNum").replaceWith("<p>scoreNum<p>");
     	console.log(scoreNum);
+    	$(".scoreTallyNum").html(scoreNum);
     })
 
     $(".diamond").click(function() {
     	scoreNum = scoreNum + diamondAdd;
-    	$("#scoreTallyNum").replaceWith("<p>scoreNum<p>");
     	console.log(scoreNum);
+    	$(".scoreTallyNum").html(scoreNum);
     })
 
     $(".bloodDiamond").click(function() {
     	scoreNum = scoreNum + bloodDiamondAdd;
-    	$("#scoreTallyNum").replaceWith("<p>scoreNum<p>");
     	console.log(scoreNum);
+    	$(".scoreTallyNum").html(scoreNum);
     })
 
     if (scoreNum === randomNum) {
 		winNum++;
+		$("#win").html(winNum);
 	}
 
 	if (scoreNum > randomNum) {
 		lossNum++;
+		$("#loss").html(lossNum);
 	}
 
 	if (winNum++ || lossNum++) {
-		scoreNum = 0
+		scoreNum = 0;
+		var randomNum = Math.floor(Math.random() * 100) + 1;
+		$("#randoNumb").html(randomNum);
 	}
 });
