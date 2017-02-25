@@ -53,3 +53,9 @@ h1 {
 	width: 300px;
 	font-size: 20px;
 }
+
+.scoreTallyNum {
+	background: teal;
+	width: 300px;
+	font-size: 20px;
+}
